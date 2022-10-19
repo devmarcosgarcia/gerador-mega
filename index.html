@@ -9,7 +9,7 @@
 
         body{
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 98vh;
@@ -41,6 +41,9 @@
             background-color: yellow;
         }
 
+        div#button{
+            margin-top: 20px;
+        }
         
     </style>
 </head>
@@ -112,9 +115,74 @@
         
     </main>
 
-    <p>
-        <input type="button" value="Gerar Números">
-    </p>
+    <div id="button">
+        <input type="button" value="Gerar Números" onclick="geraNumeros()">
+    </div>
+
+    <script>
+
+        let numeros = []
+
+        function limpa(){
+
+            if(numeros.length != 0){
+
+                window.document.getElementsByTagName('div')[numeros[0]-1].style.backgroundColor = 'white' 
+                window.document.getElementsByTagName('div')[numeros[1]-1].style.backgroundColor = 'white' 
+                window.document.getElementsByTagName('div')[numeros[2]-1].style.backgroundColor = 'white' 
+                window.document.getElementsByTagName('div')[numeros[3]-1].style.backgroundColor = 'white' 
+                window.document.getElementsByTagName('div')[numeros[4]-1].style.backgroundColor = 'white' 
+                window.document.getElementsByTagName('div')[numeros[5]-1].style.backgroundColor = 'white' 
+            }
+
+            
+        }
+
+        function geraNumeros(){
+
+            limpa()
+
+
+            for (let index = 0; index < 6; index++) {
+                
+                numeros [index] = Math.floor(Math.random() * 60) + 1
+                
+            }
+
+            comparaNumeros()
+        }
+
+        function comparaNumeros(){
+
+            while(!numeros[0] == numeros[1] && numeros[0] == numeros[2] && numeros[0] == numeros[3] && numeros[0] == numeros[4] && numeros[0] == numeros[5] &&
+                    numeros[1] == numeros[2] && numeros[1] == numeros[3] && numeros[1] == numeros[4] && numeros[1] == numeros[5] && 
+                    numeros[2] == numeros[3] && numeros[1] == numeros[4] && numeros[2] == numeros[5] &&
+                    numeros[3] == numeros[4] && numeros[3] == numeros[5] &&
+                    numeros[4] == numeros[5]){
+
+                    geraNumeros()
+
+            }
+            
+            naTela()
+             
+            console.log(numeros)
+        }
+
+        function naTela(){
+            
+            window.document.getElementsByTagName('div')[numeros[0]-1].style.backgroundColor = 'red' 
+            window.document.getElementsByTagName('div')[numeros[1]-1].style.backgroundColor = 'red' 
+            window.document.getElementsByTagName('div')[numeros[2]-1].style.backgroundColor = 'red' 
+            window.document.getElementsByTagName('div')[numeros[3]-1].style.backgroundColor = 'red' 
+            window.document.getElementsByTagName('div')[numeros[4]-1].style.backgroundColor = 'red' 
+            window.document.getElementsByTagName('div')[numeros[5]-1].style.backgroundColor = 'red'
+        }
+
+        
+
+
+    </script>
     
 </body>
 </html>
