@@ -7,14 +7,18 @@
     <title>Gerador Números MegaSena</title>
     <style>
 
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
         body{
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
             height: 98vh;
-            margin: 0px;
-            padding: 0px;
             background-color: black;
         }
 
@@ -24,17 +28,20 @@
             justify-content: center;
             align-items: center;
             width: 400px;
-            height: 400px;
+            height: 260px;
             background-color: rgb(1, 78, 1);
-            padding: 5px;
+            padding: 1px;
+            border-radius: 10px;
         }
 
         main div{
             background-color: white;
-            width: 30px;
-            height: 30px;
-            margin: 5px;
+            width: 31px;
+            height: 31px;
+            margin: 4px;
             text-align: center;
+            font-size: 25px;
+            border-radius: 5px;
         }
 
         main div:hover{
@@ -42,7 +49,13 @@
         }
 
         div#button{
-            margin-top: 20px;
+            margin-top: 30px;
+        }
+
+        div input{
+            font-size: 25px;
+            padding: 5px;
+            border-radius: 5px;
         }
         
     </style>
@@ -156,7 +169,7 @@
 
             while(!numeros[0] == numeros[1] && numeros[0] == numeros[2] && numeros[0] == numeros[3] && numeros[0] == numeros[4] && numeros[0] == numeros[5] &&
                     numeros[1] == numeros[2] && numeros[1] == numeros[3] && numeros[1] == numeros[4] && numeros[1] == numeros[5] && 
-                    numeros[2] == numeros[3] && numeros[1] == numeros[4] && numeros[2] == numeros[5] &&
+                    numeros[2] == numeros[3] && numeros[2] == numeros[4] && numeros[2] == numeros[5] &&
                     numeros[3] == numeros[4] && numeros[3] == numeros[5] &&
                     numeros[4] == numeros[5]){
 
