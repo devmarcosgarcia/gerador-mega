@@ -154,33 +154,20 @@
         function geraNumeros(){
 
             limpa()
-
-
-            for (let index = 0; index < 6; index++) {
                 
-                numeros [index] = Math.floor(Math.random() * 60) + 1
-                
-            }
+            numeros [0] = Math.floor(Math.random() * (10 - 1 + 1) +1) 
+            numeros [1] = Math.floor(Math.random() * (20 - 11 + 1)) + 11
+            numeros [2] = Math.floor(Math.random() * (30 - 21 + 1)) + 21
+            numeros [3] = Math.floor(Math.random() * (40 - 31 + 1)) + 31
+            numeros [4] = Math.floor(Math.random() * (50 - 41 + 1)) + 41
+            numeros [5] = Math.floor(Math.random() * (60 - 50 + 1)) + 50            
 
-            comparaNumeros()
-        }
-
-        function comparaNumeros(){
-
-            while(!numeros[0] == numeros[1] && numeros[0] == numeros[2] && numeros[0] == numeros[3] && numeros[0] == numeros[4] && numeros[0] == numeros[5] &&
-                    numeros[1] == numeros[2] && numeros[1] == numeros[3] && numeros[1] == numeros[4] && numeros[1] == numeros[5] && 
-                    numeros[2] == numeros[3] && numeros[2] == numeros[4] && numeros[2] == numeros[5] &&
-                    numeros[3] == numeros[4] && numeros[3] == numeros[5] &&
-                    numeros[4] == numeros[5]){
-
-                    geraNumeros()
-
-            }
-            
-            naTela()
-             
             console.log(numeros)
+
+            naTela()
         }
+
+        
 
         function naTela(){
             
