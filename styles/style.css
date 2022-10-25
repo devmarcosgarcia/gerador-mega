@@ -13,6 +13,25 @@ body{
     background-color: rgba(10, 78, 10, 0.384);
 }
 
+#opcoes{
+    width: 400px;
+    background-color: white;
+    background-color: rgb(1, 78, 1);
+    padding: 5px;
+    border-radius: 10px;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+#opcoes legend{
+    padding: 10px;
+}
+
+#opcoes input{
+    margin: 15px;
+}
+
 main{
     display: flex;
     flex-wrap: wrap;
