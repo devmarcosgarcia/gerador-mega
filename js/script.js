@@ -66,6 +66,8 @@ function aleatoriosPorLinha(){
 
 }
 function aleatorios(){
+
+    do{
     
     for (let index = 0; index < numeros.length; index++) {
         
@@ -73,7 +75,8 @@ function aleatorios(){
          
     }
 
-    // fazer a checagem de números repetidos
+    }while(0)
+
 
     console.log(numeros)
 }
