@@ -14,7 +14,7 @@ body{
 }
 
 #opcoes{
-    width: 400px;
+    width: 350px;
     background-color: white;
     background-color: rgb(1, 78, 1);
     padding: 5px;
@@ -37,7 +37,7 @@ main{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 400px;
+    width: 350px;
     height: 260px;
     background-color: rgb(1, 78, 1);
     padding: 1px;
@@ -46,12 +46,12 @@ main{
 
 main div{
     background-color: white;
-    width: 31px;
-    height: 31px;
+    width: 26px;
+    height: 28px;
     margin: 4px;
     text-align: center;
-    font-size: 25px;
-    line-height: 31px;
+    font-size: 22px;
+    line-height: 28px;
     border-radius: 5px;
 }
 
@@ -64,7 +64,7 @@ div#button{
 }
 
 div input{
-    font-size: 25px;
-    padding: 5px;
+    font-size: 22px;
+    padding: 3px;
     border-radius: 5px;
 }
