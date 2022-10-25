@@ -1,8 +1,8 @@
-let numeros = []
+let numeros = [0, 0, 0, 0, 0, 0]
 
 function limpa(){
 
-    if(numeros.length != 0){
+    if(numeros[0] != 0){
 
         window.document.getElementsByTagName('div')[numeros[0]].style.backgroundColor = 'white' 
         window.document.getElementsByTagName('div')[numeros[1]].style.backgroundColor = 'white' 
@@ -19,12 +19,12 @@ function geraNumeros(){
 
     var opcaoAleatorio = window.document.getElementById('idAleatorio')
     var opcaoLinha = window.document.getElementById('idLinhas')
+
+    limpa()
     
     if(opcaoAleatorio.checked == true){
 
         console.log('modo aleatorio')
-
-        limpa()
 
         aleatorios()
 
@@ -36,13 +36,11 @@ function geraNumeros(){
 
         console.log('modo por linha')
 
-        limpa()
-
         aleatoriosPorLinha()
 
         naTela()
     }
-    
+
 }
 
 function naTela(){
@@ -74,6 +72,8 @@ function aleatorios(){
         numeros [index] = Math.floor(Math.random() * (60 - 1 + 1) + 1) 
          
     }
+
+    // fazer a checagem de números repetidos
 
     console.log(numeros)
 }
