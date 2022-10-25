@@ -5,125 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gerador Números MegaSena</title>
-    <style>
-
-        *{
-            margin: 0px;
-            padding: 0px;
-            box-sizing: border-box;
-        }
-
-        body{
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            height: 98vh;
-            background-color: black;
-        }
-
-        main{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
-            width: 400px;
-            height: 260px;
-            background-color: rgb(1, 78, 1);
-            padding: 1px;
-            border-radius: 10px;
-        }
-
-        main div{
-            background-color: white;
-            width: 31px;
-            height: 31px;
-            margin: 4px;
-            text-align: center;
-            font-size: 25px;
-            border-radius: 5px;
-        }
-
-        main div:hover{
-            background-color: yellow;
-        }
-
-        div#button{
-            margin-top: 30px;
-        }
-
-        div input{
-            font-size: 25px;
-            padding: 5px;
-            border-radius: 5px;
-        }
-        
-    </style>
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="js/script.js"></script>
 </head>
 <body>
 
     <main>
 
-        <div id="div1">1</div>
-        <div id="div2">2</div>
-        <div id="div3">3</div>
-        <div id="div4">4</div>
-        <div id="div5">5</div>
-        <div id="div6">6</div>
-        <div id="div7">7</div>
-        <div id="div8">8</div>
-        <div id="div9">9</div>
-        <div id="div10">10</div>
-        <div id="div11">11</div>
-        <div id="div12">12</div>
-        <div id="div13">13</div>
-        <div id="div14">14</div>
-        <div id="div15">15</div>
-        <div id="div16">16</div>
-        <div id="div17">17</div>
-        <div id="div18">18</div>
-        <div id="div19">19</div>
-        <div id="div20">20</div>
-        <div id="div21">21</div>
-        <div id="div22">22</div>
-        <div id="div23">23</div>
-        <div id="div24">24</div>
-        <div id="div25">25</div>
-        <div id="div26">26</div>
-        <div id="div27">27</div>
-        <div id="div28">28</div>
-        <div id="div29">29</div>
-        <div id="div30">30</div>
-        <div id="div31">31</div>
-        <div id="div32">32</div>
-        <div id="div33">33</div>
-        <div id="div34">34</div>
-        <div id="div35">35</div>
-        <div id="div36">36</div>
-        <div id="div37">37</div>
-        <div id="div38">38</div>
-        <div id="div39">39</div>
-        <div id="div40">40</div>
-        <div id="div41">41</div>
-        <div id="div42">42</div>
-        <div id="div43">43</div>
-        <div id="div44">44</div>
-        <div id="div45">45</div>
-        <div id="div46">46</div>
-        <div id="div47">47</div>
-        <div id="div48">48</div>
-        <div id="div49">49</div>
-        <div id="div50">50</div>
-        <div id="div51">51</div>
-        <div id="div52">52</div>
-        <div id="div53">53</div>
-        <div id="div54">54</div>
-        <div id="div55">55</div>
-        <div id="div56">56</div>
-        <div id="div57">57</div>
-        <div id="div58">58</div>
-        <div id="div59">59</div>
-        <div id="div60">60</div>
+        <div>1</div> <div>2</div> <div>3</div> <div>4</div> <div>5</div> <div>6</div>
+        <div>7</div> <div>8</div> <div>9</div> <div>10</div> <div>11</div> <div>12</div>
+        <div>13</div> <div>14</div> <div>15</div> <div>16</div> <div>17</div> <div>18</div>
+        <div>19</div> <div>20</div> <div>21</div> <div>22</div> <div>23</div> <div>24</div>
+        <div>25</div> <div>26</div> <div>27</div> <div>28</div> <div>29</div> <div>30</div>
+        <div>31</div> <div>32</div> <div>33</div> <div>34</div> <div>35</div> <div>36</div>
+        <div>37</div> <div>38</div> <div>39</div> <div>40</div> <div>41</div> <div>42</div>
+        <div>43</div> <div>44</div> <div>45</div> <div>46</div> <div>47</div> <div>48</div>
+        <div>49</div> <div>50</div> <div>51</div> <div>52</div> <div>53</div> <div>54</div>
+        <div>55</div> <div>56</div> <div>57</div> <div>58</div> <div>59</div> <div>60</div>
 
         
     </main>
@@ -131,58 +29,6 @@
     <div id="button">
         <input type="button" value="Gerar Números" onclick="geraNumeros()">
     </div>
-
-    <script>
-
-        let numeros = []
-
-        function limpa(){
-
-            if(numeros.length != 0){
-
-                window.document.getElementsByTagName('div')[numeros[0]-1].style.backgroundColor = 'white' 
-                window.document.getElementsByTagName('div')[numeros[1]-1].style.backgroundColor = 'white' 
-                window.document.getElementsByTagName('div')[numeros[2]-1].style.backgroundColor = 'white' 
-                window.document.getElementsByTagName('div')[numeros[3]-1].style.backgroundColor = 'white' 
-                window.document.getElementsByTagName('div')[numeros[4]-1].style.backgroundColor = 'white' 
-                window.document.getElementsByTagName('div')[numeros[5]-1].style.backgroundColor = 'white' 
-            }
-
-            
-        }
-
-        function geraNumeros(){
-
-            limpa()
-                
-            numeros [0] = Math.floor(Math.random() * (10 - 1 + 1) +1) 
-            numeros [1] = Math.floor(Math.random() * (20 - 11 + 1)) + 11
-            numeros [2] = Math.floor(Math.random() * (30 - 21 + 1)) + 21
-            numeros [3] = Math.floor(Math.random() * (40 - 31 + 1)) + 31
-            numeros [4] = Math.floor(Math.random() * (50 - 41 + 1)) + 41
-            numeros [5] = Math.floor(Math.random() * (60 - 50 + 1)) + 51            
-
-            console.log(numeros)
-
-            naTela()
-        }
-
-        
-
-        function naTela(){
-            
-            window.document.getElementsByTagName('div')[numeros[0]-1].style.backgroundColor = 'red' 
-            window.document.getElementsByTagName('div')[numeros[1]-1].style.backgroundColor = 'red' 
-            window.document.getElementsByTagName('div')[numeros[2]-1].style.backgroundColor = 'red' 
-            window.document.getElementsByTagName('div')[numeros[3]-1].style.backgroundColor = 'red' 
-            window.document.getElementsByTagName('div')[numeros[4]-1].style.backgroundColor = 'red' 
-            window.document.getElementsByTagName('div')[numeros[5]-1].style.backgroundColor = 'red'
-        }
-
-        
-
-
-    </script>
     
 </body>
 </html>
