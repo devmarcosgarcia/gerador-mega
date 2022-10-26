@@ -68,15 +68,55 @@ function aleatoriosPorLinha(){
 function aleatorios(){
 
     do{
+
+        numerosAleatorios()
+
+    }while(comparaNumeros() == false)
+
+
+
+
+    function numerosAleatorios(){
     
-    for (let index = 0; index < numeros.length; index++) {
+        for (let index = 0; index < numeros.length; index++) {
+            
+            numeros [index] = Math.floor(Math.random() * (60 - 1 + 1) + 1) 
+            
+        }
         
-        numeros [index] = Math.floor(Math.random() * (60 - 1 + 1) + 1) 
-         
     }
 
-    }while(0)
 
 
-    console.log(numeros)
+    function comparaNumeros(){
+        
+            
+        if(numeros[0] == numeros[1] || numeros[0] == numeros[2] || numeros[0] == numeros[3] || numeros[0] == numeros[4] || numeros[0] == numeros[5]){
+
+            return false
+
+        }else if (numeros[1] == numeros[2] || numeros[1] == numeros[3] || numeros[1] == numeros[4] || numeros[1] == numeros[5]){
+            
+            return false
+
+        }else if (numeros[2] == numeros[3] || numeros[2] == numeros[4] || numeros[2] == numeros[5]){
+            
+            return false
+
+        }else if (numeros[3] == numeros[4] || numeros[3] == numeros[5]){
+            
+            return false
+
+        }else if (numeros[4] == numeros[5]){
+            
+            return false
+
+        }else{
+
+            return true
+        }
+            
+        
+    }
+    
 }
