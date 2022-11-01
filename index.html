@@ -12,13 +12,23 @@
 
     <div id="opcoes">
         <fieldset>
-            <legend>Escolha uma forma de geração dos números</legend>
+            <legend>Números aleatórios</legend>
 
             <input type="radio" name="opcao" id="idAleatorio" value="aleatorio" checked="checked">
-            <label for="idAleatorio">Números aleatórios de 1 a 60.</label>
+            <label for="idAleatorio">Números aleatórios geral.</label>
             <br>
+            <input type="radio" name="opcao" id="idAleParImpar" value="aleParImpar">
+            <label for="idAleParImpar">Três pares, Três impares.</label>
+        </fieldset>
+        <fieldset>
+            <legend>Um número por linha</legend>
+            
             <input type="radio" name="opcao" id="idLinhas" value="linhas">
             <label for="idLinhas">Um número de cada linha.</label>
+            <br>
+            <input type="radio" name="opcao" id="idLinhaParImpar" value="linhaParImpar">
+            <label for="idLinhaParImpar">Três pares, Três impares.</label>
+
         </fieldset>
     </div>
 

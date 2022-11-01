@@ -20,12 +20,16 @@ body{
     padding: 5px;
     border-radius: 10px;
     color: white;
-    font-size: 20px;
     margin-bottom: 10px;
+}
+
+#opcoes fieldset{
+    margin: 3px;
 }
 
 #opcoes legend{
     padding: 10px;
+    font-size: 18px;
 }
 
 #opcoes input{
