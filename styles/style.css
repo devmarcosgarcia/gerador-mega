@@ -1,74 +1,69 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-}
-
 body{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 98vh;
-    background-color: rgba(10, 78, 10, 0.384);
+    background-color: rgba(0, 75, 0, 0.938);
 }
 
-#opcoes{
-    width: 350px;
-    background-color: white;
-    background-color: rgb(1, 78, 1);
-    padding: 5px;
-    border-radius: 10px;
-    color: white;
-    margin-bottom: 10px;
+header{
+    background-color: aqua;
+    text-align: center;
 }
 
-#opcoes fieldset{
-    margin: 3px;
-}
-
-#opcoes legend{
-    padding: 10px;
-    font-size: 18px;
-}
-
-#opcoes input{
-    margin: 15px;
+.cabecalho__titulo{
+    text-transform: uppercase;
 }
 
 main{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    width: 350px;
-    height: 260px;
-    background-color: rgb(1, 78, 1);
-    padding: 1px;
-    border-radius: 10px;
 }
 
-main div{
-    background-color: white;
-    width: 26px;
-    height: 28px;
-    margin: 4px;
+.secao__numeros{
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 0.3em;
+    width: 90%;
+    background-color: rgb(234, 247, 211);
+    border: 1px solid black;
+    border-radius: 3%;
+    padding: 0.2em;
+}
+
+.secao__numeros div{
+    display: flex;
+    justify-content: center;
     text-align: center;
-    font-size: 22px;
-    line-height: 28px;
-    border-radius: 5px;
+    border: 1px solid black;
+    border-radius: 25%;
+    padding: 0.2em;
+    background-color: white;
 }
 
-main div:hover{
-    background-color: yellow;
+.secao__opcoes{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+
+    width: 60%;
 }
 
-div#button{
-    margin-top: 30px;
+.radio__opcoes-label{
+    background-color: white;
+    margin-top: 1em;
 }
 
-div input{
-    font-size: 22px;
-    padding: 3px;
-    border-radius: 5px;
+.radio__opcoes{
+    display: none;
+}
+
+.radio-1:checked ~.radio__label-1{
+    background-color: red;
+}
+
+.radio-2:checked ~.radio__label-2{
+    background-color: red;
+}
+
+.button__gerar{
+    margin-top: 1em;
 }
