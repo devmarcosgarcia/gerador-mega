@@ -7,6 +7,9 @@
     <title>Gerador Números MegaSena</title>
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
     <script src="js/script.js"></script>
 </head>
 <body>
@@ -81,18 +84,18 @@
 
         <section class="secao__opcoes">
             <p class="texto">Selecione abaixo uma forma para gerar os números aleatórios</p>
-            <input class="radio__opcoes radio-1" type="radio" name="selecionaTipo" id="numerosAleatorios">
-            <label class="radio__opcoes-label botao radio__label-1" for="numerosAleatorios">Números aleatorios</label>
+            <input class="radio__opcoes radio-1" type="radio" name="selecionaTipo" id="idAleatorio">
+            <label class="radio__opcoes-label botao radio__label-1" for="idAleatorio" >Números aleatorios</label>
 
-            <input class="radio__opcoes radio-2" type="radio" name="selecionaTipo" id="numerosPorLinha">
-            <label class="radio__opcoes-label botao radio__label-2" for="numerosPorLinha">Um número por linha</label>
+            <input class="radio__opcoes radio-2" type="radio" name="selecionaTipo" id="idLinhas">
+            <label class="radio__opcoes-label botao radio__label-2" for="idLinhas">Um número por linha</label>
     
-            <input class="button__gerar botao" type="button" value="Gerar Números">
+            <input class="button__gerar botao" type="button" value="Gerar Números" onclick="geraNumeros()">
         </section>
         
     </main>
     <footer>
-        <p class="rodape">Página desenvolvida por <a href="" class="rodape__link">Marcos Quirino Garcia</a></p>
+        <p class="rodape">Página desenvolvida por <a href="https://www.linkedin.com/in/marcos-quirino-garcia-2a5b0a224/" target="_blank" class="rodape__link">Marcos Quirino Garcia</a></p>
     </footer>
     
 </body>
