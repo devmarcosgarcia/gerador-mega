@@ -72,13 +72,13 @@ main{
 
 .radio-1:checked ~.radio__label-1{
     background-color: #44E04F;
-    border: 2px solid white;
+    border: 3px solid white;
     font-weight: bold;
 }
 
 .radio-2:checked ~.radio__label-2{
     background-color: #44E04F;
-    border: 2px solid white;
+    border: 3px solid white;
     font-weight: bold;
 }
 
@@ -115,4 +115,37 @@ footer{
     text-decoration: none;
     color: gray;
     font-weight: 700;
+}
+
+
+@media screen and (min-width: 1024px){
+    
+    .cabecalho__titulo{
+        font-size: 2em;
+    }
+
+    .secao__numeros{
+        gap: 0.3em;
+        padding: 0.5em;
+        font-size: 1.1em;
+    }
+
+    .texto{
+        font-size: 1.5em;
+        margin: 1.3em 0;
+    }
+
+    .botao{
+        font-size: 1em;
+        width: 40%;
+    }
+
+    .botao:hover{
+        background-color: #44E04F;
+    }
+
+    .rodape__link:hover{
+        color: #44E04F;
+    }
+
 }
