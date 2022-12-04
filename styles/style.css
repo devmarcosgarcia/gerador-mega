@@ -28,7 +28,7 @@ main{
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(6, 1fr);
     gap: 0.3em;
-    width: 95%;
+    width: 90%;
     background-color: #8AE690;
     border: 1px solid black;
     border-radius: 3%;
@@ -47,7 +47,7 @@ main{
 }
 
 .texto{
-    margin: 1em 0;
+    margin: 1.8em 0;
     font-size: 1.1em;
     color: white;
 }
@@ -73,11 +73,13 @@ main{
 .radio-1:checked ~.radio__label-1{
     background-color: #44E04F;
     border: 2px solid white;
+    font-weight: bold;
 }
 
 .radio-2:checked ~.radio__label-2{
     background-color: #44E04F;
     border: 2px solid white;
+    font-weight: bold;
 }
 
 .button__gerar{
@@ -86,7 +88,7 @@ main{
 
 .botao{
     padding: 0.8em 0; 
-    margin: 1em 0;
+    margin: 1.5em 0;
     text-transform: uppercase;
     text-align: center;
     border-radius: 8px;
