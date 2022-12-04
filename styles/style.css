@@ -1,14 +1,23 @@
 body{
-    background-color: rgba(0, 75, 0, 0.938);
+    background-color: #1D6122;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
 header{
-    background-color: aqua;
-    text-align: center;
+    
 }
 
 .cabecalho__titulo{
     text-transform: uppercase;
+    margin: 1em ;
+    font-weight: bold;
+    line-height: 1.3em;
+    color: white;
 }
 
 main{
@@ -23,7 +32,7 @@ main{
     grid-template-rows: repeat(6, 1fr);
     gap: 0.3em;
     width: 90%;
-    background-color: rgb(234, 247, 211);
+    background-color: #8AE690;
     border: 1px solid black;
     border-radius: 3%;
     padding: 0.2em;
@@ -39,17 +48,23 @@ main{
     background-color: white;
 }
 
+.texto{
+    margin: 2em 0;
+    font-size: 1.1em;
+    color: white;
+}
+
 .secao__opcoes{
     display: flex;
     flex-direction: column;
-    align-content: center;
+    align-items: center;
 
-    width: 60%;
+    width: 90%;
 }
 
 .radio__opcoes-label{
-    background-color: white;
-    margin-top: 1em;
+    background-color: #8AE690;
+    margin-top: 0.8em;
 }
 
 .radio__opcoes{
@@ -57,13 +72,46 @@ main{
 }
 
 .radio-1:checked ~.radio__label-1{
-    background-color: red;
+    background-color: #44E04F;
+    border: 2px solid white;
 }
 
 .radio-2:checked ~.radio__label-2{
-    background-color: red;
+    background-color: #44E04F;
+    border: 2px solid white;
 }
 
 .button__gerar{
     margin-top: 1em;
+}
+
+.botao{
+    padding: 0.8em 0; 
+    text-transform: uppercase;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 0.8em;
+    width: 70%;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    
+}
+
+.rodape{
+    background-color: #103111;
+    color: white;
+    font-size: 0.8em;
+    padding: 0.8em;
+
+    vertical-align: center;
+}
+
+.rodape__link{
+    text-decoration: none;
+    color: white;
 }
